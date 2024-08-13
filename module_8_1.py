@@ -31,7 +31,7 @@ def add_everything_mod(a, b):
 add_everything_up(123.456, 'строка')
 add_everything_up('яблоко', 4215)
 add_everything_up(123.456, 7)
-print('\n{txt:*^50}'.format(txt=' Теперь c пояcнением ошибок '))
+print('\n{txt:*^50}'.format(txt=' С пояcнением ошибок '))
 add_everything_mod(123.456, 'строка')
 add_everything_mod('яблоко', 4215)
 add_everything_mod(123.456, 7)
