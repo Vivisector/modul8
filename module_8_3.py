@@ -31,7 +31,7 @@ class Car:
         else:
             return True
 
-
+decor_string = f'{'':=<40}'
 try:
     first = Car('Model1', 1000000, 'f123dj')
 except IncorrectVinNumber as exc:
@@ -40,7 +40,7 @@ except IncorrectCarNumbers as exc:
     print(exc.msg)
 else:
     print(f'{first.model} успешно создан')
-
+print(decor_string)
 try:
     second = Car('Model2', 300, 'т001тр')
 except IncorrectVinNumber as exc:
@@ -49,26 +49,7 @@ except IncorrectCarNumbers as exc:
     print(exc.msg)
 else:
     print(f'{second.model} успешно создан')
-print(f'{'':=^20}')
-# print(f'{"":=^20}')
-try:
-    first = Car('Model1', 1000000, 'f123dj')
-except IncorrectVinNumber as exc:
-    print(exc.msg)
-except IncorrectCarNumbers as exc:
-    print(exc.msg)
-else:
-    print(f'{first.model} успешно создан')
-
-try:
-    second = Car('Model2', 300, 'т001тр')
-except IncorrectVinNumber as exc:
-    print(exc.msg)
-except IncorrectCarNumbers as exc:
-    print(exc.msg)
-else:
-    print(f'{second.model} успешно создан')
-
+print(decor_string)
 try:
     third = Car('Model3', 2020202, 'нет номера')
 except IncorrectVinNumber as exc:
